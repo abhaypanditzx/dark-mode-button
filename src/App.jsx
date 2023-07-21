@@ -8,7 +8,7 @@ function App() {
   const [cloud,setCloud] = useState("block");
   const [circle, setCircle] = useState('bg-yellow-400')
   const [alt,setAlt] = useState("hidden");
-  const [text,setText] = useState("darkmode is enabled");
+  const [text,setText] = useState("");
   const [textcol,setTextcol] = useState("");
 
 
@@ -27,6 +27,7 @@ const func =()=>{
   setStar("block");
   setCloud("hidden");
   setAlt("flex");
+  setText("darkmode is enabled");
   setTextcol("text-green-500");
 setTimeout(() => {
   setAlt("hidden");
@@ -76,6 +77,10 @@ setTextcol("text-red-500");
 </svg>
 
 </div>
+</div>
+<div className="absolute bottom-0 flex space-x-2 p-2">
+  <a  href="https://www.facebook.com/anonymousjavascriptuser" className="text-white font-medium rounded-sm bg-blue-600 p-1">facebook</a>
+  <a  href="https://github.com/abhaypanditzx" className="text-white font-medium rounded-sm bg-gray-800 p-1">github</a>
 </div>
  </div>
   )
